@@ -22,22 +22,18 @@ struct ContentView: View {
                     .padding()
                 Spacer()
             
-                SwiftUI.HStack{
+                HStack{
                     Image("no")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 130, height: 130, alignment: .center)
-                }
-                }
-                   
-                    Image("sa")
+              Image("sa")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 130, height: 130, alignment: .center)
-                    }
-                    }
-   
-                    Image("drag")
+                }
+        HStack{
+              Image("drag")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 130, height: 130, alignment: .center)
@@ -49,10 +45,10 @@ struct ContentView: View {
                         .resizable()
                         .scaledToFit()
                         .frame(width: 130, height: 130, alignment: .center)
+        }
                 }
-                }
-                
-
+        }
+    }
 
 
 
@@ -61,4 +57,5 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
+}
 }
